@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #FAF8FF;
+  --surface: #FFFFFF;
+  --text-primary: #242033;
+  --text-secondary: #777287;
+}
+
+.dark {
+  --bg: #17141F;
+  --surface: #211E2C;
+  --text-primary: #F1EEFB;
+  --text-secondary: #A79FC2;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text-primary);
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.card {
+  background: var(--surface);
+  border-radius: 20px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 16px rgba(124, 92, 252, 0.08);
+}
+
+.safe-top {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}

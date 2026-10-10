@@ -1,0 +1,13 @@
+{
+  "name": "K? — Kumusta Ka?",
+  "short_name": "K?",
+  "description": "A private, compassionate companion for tracking your mental wellness.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF8FF",
+  "theme_color": "#7C5CFC",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
